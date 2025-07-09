@@ -8,6 +8,7 @@ app = FastAPI()
 
 chat_model = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
+    temperature=0.0
 )
 
 @app.get("/")
